@@ -1,10 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
+  margin: 0;
   height: 100%;
+}
+
+.main {
   background-image: url(/assets/6980.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .title {
@@ -16,7 +26,6 @@ html {
 .subtitle {
   font-family: montserrat;
   text-align: center;
-  margin-top: -2%;
   font-size: 2vw;
 }
 
@@ -63,10 +72,51 @@ html {
   text-align: center;
 }
 
-/* ABOUT ONLINE BIBLE */
+/** NAVIGATION */
+
+header {
+  width: 100%;
+  background-color: rgb(192, 192, 192);
+  position: fixed;
+}
+
+.nav-class li {
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  font-family: gotham;
+  float: right;
+  display: inline;
+}
+
+.nav-logo {
+  float: left;
+}
+
+ul li {
+  border-radius: 30%;
+  margin-top: -20px;
+}
+
+a {
+  color: #323131;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/** ABOUT ONLINE BIBLE */
+
+.about {
+  overflow: auto;
+}
 
 .image {
-  padding-top: 30%;
   content: url(assets/B.png);
   height: 100%;
   width: 50%;
@@ -76,7 +126,7 @@ html {
 }
 
 .description {
-  padding-top: 33%;
+  padding-top: 8%;
 }
 
 .head1 {
@@ -88,7 +138,7 @@ html {
   font-family: gotham light;
   font-size: 1.5vw;
 }
-/*  Read Bible Everyday  */
+/**  Read Bible Everyday  */
 
 .image3 {
   width: 600px;
@@ -118,22 +168,102 @@ html {
   padding-bottom: 15%;
 }
 
-/* FOOTER */
+/** CONTENT  **/
+
+.content {
+  min-height: 100%;
+  margin: 0 auto;
+
+  width: 80%;
+}
+
+/** BOOKS **/
+
+.old-testament {
+  overflow: auto;
+  width: 70%;
+  margin: 0 auto;
+
+  text-align: left;
+  font-family: Georgia;
+}
+
+.new-testament {
+  padding-top: 30px;
+  overflow: auto;
+  padding-bottom: 200px;
+  width: 70%;
+  margin: 0 auto;
+
+  text-align: left;
+  font-family: Georgia;
+}
+
+.order-book li {
+  margin: 0 auto;
+  font-family: gotham;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.order-book {
+  padding-top: 20px;
+}
+
+.book-col1 {
+  float: left;
+  width: 20%;
+}
+
+.book-col2 {
+  float: left;
+  width: 20%;
+}
+
+.book-col3 {
+  float: left;
+  width: 20%;
+}
+
+.book-col4 {
+  float: left;
+  width: 20%;
+}
+
+.book-col5 {
+  float: left;
+  width: 20%;
+}
+
+.books-title {
+  padding-top: 100px;
+  margin: 0px auto;
+  font-family: "Quattrocento", serif;
+  text-align: center;
+}
+
+/** FOOTER */
+
+footer {
+  padding: 20px 20px;
+  position: relative;
+  margin-top: -60px;
+  /* negative value of footer height */
+  height: 170px;
+  clear: both;
+}
 
 .f-title {
   font-family: gotham medium;
   font-size: 30px;
   font-weight: bolder;
   float: left;
-  padding-top: -10cm;
-  position: relative;
-  margin-top: 5px;
 }
 
 .about-des {
   text-align: right;
   font-family: Georgia;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .about-title {
@@ -141,22 +271,82 @@ html {
   font-family: gotham medium;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .social-title {
   font-family: gotham medium;
   font-size: 20px;
   font-weight: bold;
-  margin-top: -90px;
+  margin-top: -70px;
 }
 
 .social-icons {
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .lower-f {
   font-family: gotham;
-  margin-top: -5px;
   font-size: 12px;
+}
+
+/** CONTAINER */
+
+.container {
+  min-height: 100%;
+}
+
+.third {
+  overflow: auto;
+  padding-bottom: 170px;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+
+.book-title {
+  color: #323131;
+  font-size: 50px;
+  font-family: gotham;
+  text-align: center;
+}
+
+.chapter-number {
+  font-family: gotham;
+  font-size: 20px;
+}
+
+.ul-chapter li {
+  padding: 10px 50px;
+  display: inline-block;
+}
+
+.ul-chapter {
+  padding-top: 30px;
+  display: table;
+  margin: 0 auto;
+}
+
+.page {
+  color: #323131;
+  font-size: 40px;
+  font-family: gotham;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.next-btn {
+  font-weight: 800;
+  font-size: 35px;
+  color: #323131;
+  text-align: center;
+  font-family: gotham;
 }
