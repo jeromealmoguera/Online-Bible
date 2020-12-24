@@ -134,7 +134,8 @@ a:visited {
   font-size: 4vw;
 }
 
-.paragraph {
+.home-paragraph {
+  text-align: left;
   font-family: gotham light;
   font-size: 1.5vw;
 }
